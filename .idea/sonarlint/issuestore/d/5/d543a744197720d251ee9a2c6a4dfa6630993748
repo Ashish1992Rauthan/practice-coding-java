@@ -1,0 +1,28 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¡´üØ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(»¶¥
+0
+java:S1220""Move this file to a named package.
+X
+java:S3518"CMake sure this expression can't be zero before doing this division.(±ı¢5
+Y
+java:S3518:"CMake sure this expression can't be zero before doing this division.(ÔñàÊ
+E
+java:S1197"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+8
+java:S1659""Declare "num2" on a separate line.(¬âÕî
+N	java:S106
+"9Replace this use of System.out or System.err by a logger.(ú¨†à
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ë€Øúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ˆëØ™ÿÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(á¼4
+E
+java:S1197"*Move the array designators [] to the type.(ÎÍµúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(˜ç›ÿÿÿÿÿ
+U
+java:S1854.":Remove this useless assignment to local variable "result".(ÕÑŸÿÿÿÿÿ
+F
+java:S1481."+Remove this unused "result" local variable.(ÕÑŸÿÿÿÿÿ
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(ìÍ¦‡
+S	java:S1063"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ

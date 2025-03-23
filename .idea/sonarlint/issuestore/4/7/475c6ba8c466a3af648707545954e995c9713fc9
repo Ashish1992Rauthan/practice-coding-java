@@ -1,0 +1,77 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Õ×©™
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(óåûœÿÿÿÿÿ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(çØÕºıÿÿÿÿ
+b	java:S101*"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ËÍà
+b	java:S1015"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ªóÛ˜
+g	java:S101D"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¾ì‹èùÿÿÿÿ
+g	java:S101O"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(üÕ§¥üÿÿÿÿ
+b	java:S101\"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ê‡å—
+g	java:S101g"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(£Ô³Óıÿÿÿÿ
+b	java:S101r"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(½ñóµ
+c	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Âï©
+h	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(úåËÿÿÿÿÿÿ
+h	java:S101·"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ˆÉÓıÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+E
+java:S1197"*Move the array designators [] to the type.(ÎÍµúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+E
+java:S1197"*Move the array designators [] to the type.(ÎÍµúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(×•œ²
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+E
+java:S1197"*Move the array designators [] to the type.(ÎÍµúÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(”îÓ™şÿÿÿÿ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+E
+java:S1197+"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+S	java:S106."9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+E
+java:S11976"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+N	java:S1069"9Replace this use of System.out or System.err by a logger.(×•œ²
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+E
+java:S1197E"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+N	java:S106H"9Replace this use of System.out or System.err by a logger.(Ö¯§œ
+S	java:S106J"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+E
+java:S1197P"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+N	java:S106S"9Replace this use of System.out or System.err by a logger.(Ö¯§œ
+S	java:S106U"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+E
+java:S1197]"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+N	java:S106`"9Replace this use of System.out or System.err by a logger.(Ö¯§œ
+S	java:S106b"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+E
+java:S1197h"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+N	java:S106k"9Replace this use of System.out or System.err by a logger.(Ö¯§œ
+S	java:S106m"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+E
+java:S1197s"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+N	java:S106w"9Replace this use of System.out or System.err by a logger.( Š½¡
+S	java:S106z"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+F
+java:S1197‚"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+O	java:S106†"9Replace this use of System.out or System.err by a logger.( Š½¡
+T	java:S106‰"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+F
+java:S1197‘"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+T	java:S106•"9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ
+O	java:S106š"9Replace this use of System.out or System.err by a logger.(×•œ²
+T	java:S106Ÿ"9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ
+T	java:S106¡"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+T	java:S106¦"9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ
+O	java:S106«"9Replace this use of System.out or System.err by a logger.(×•œ²
+T	java:S106°"9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ
+T	java:S106²"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+F
+java:S1197¸"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+T	java:S106¼"9Replace this use of System.out or System.err by a logger.(“§×²ÿÿÿÿÿ
+T	java:S106¿"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
