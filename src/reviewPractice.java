@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class reviewPractice {
     public static void main(String args[]){
@@ -665,13 +666,32 @@ class Mai111n {
             }
 
         }
-//        while (j < arr.length) {
-//            arr1[j] = 0;
-//            j++;
-//        }
+        while (j < arr.length) {
+            arr1[j] = 0;
+            j++;
+        }
         System.out.println("Array after moving zeros: " + Arrays.toString(arr1));
     }
 }
+/*
+StringBuilder nonZeros = new StringBuilder();
+        int zeroCount = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c != '0') {
+                nonZeros.append(c);
+            } else {
+                zeroCount++;
+            }
+        }
+
+        // Append the zeros to the end
+        for (int i = 0; i < zeroCount; i++) {
+            nonZeros.append('0');
+        }
+        System.out.println(nonZeros)
+ */
 
 class SeparateAlphabetsNumbers {
     public static void main(String[] args) {
@@ -796,6 +816,46 @@ class removeD {
 
     }
 }
+
+//Write a program to convert uppercase to lowercase and vice versa.
+
+class upperToLower{
+    public static void main(String[] args) {
+        String input = "HexAwarE";
+        StringBuilder converted = new StringBuilder();
+        for(int i =0; i< input.length(); i++){
+            char ch = input.charAt(i);
+            if(Character.isUpperCase(ch)){
+                converted.append(Character.toLowerCase(ch));
+            }else if (Character.isLowerCase(ch)){
+                converted.append(Character.toUpperCase(ch));
+            }
+        }
+        System.out.println(converted);
+    }
+    }
+
+// shift all even numbers to the left and odd numbers to the right.
+class EvenOdd{
+    public static void main(String[] args) {
+            int[] arr = {2,5,8,7,1,3,6,4,5,9};
+        int evenIndex = 0; // Pointer to track the position for even numbers
+
+        // Iterate through the array
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                // If the current number is even, swap it with the number at evenIndex
+                int temp = arr[i];  //temp = 8
+                arr[i] = arr[evenIndex]; //arr[2] 8  = arr[1] 5
+                arr[evenIndex] = temp;//5=8;
+                evenIndex++; // Move the evenIndex pointer to the right
+            }
+        }
+        System.out.println(Arrays.toString(arr));
+
+    }
+
+    }
 //class Employee implements Comparable<Employee> {
 //    int id;
 //    String name;
@@ -877,6 +937,46 @@ class anagram{
     List<List<String>> anagramGroups = new ArrayList<>(anagramMap.values());
         System.out.println("Anagram subarrays: " + anagramGroups);
 }
+}
+class Anagrams {
+    public static void main(String args[]) {
+        int numberOfAnagrams = 0;
+        String[] stringArray = {"eat", "tea", "tan", "ate", "nat", "bat", "plate", "knot"};
+        List<String> stringList = Arrays.asList(stringArray);
+
+        for (int i = 0; i < stringList.size() - 1; i++) {
+            for (int j = i + 1; j < stringList.size(); j++) {
+                String s1 = stringList.get(i);
+                String s2 = stringList.get(j);
+
+                // Check if they might be anagrams (same length)
+                if (s1.length() != s2.length()) {
+                    continue;
+                }
+
+                // Check if all characters in s1 exist in s2
+                boolean isAnagram = true;
+                String s2Copy = s2; // We'll modify this to check character counts
+
+                for (int k = 0; k < s1.length(); k++) {
+                    char c = s1.charAt(k);
+                    int index = s2Copy.indexOf(c);
+                    if (index == -1) {
+                        isAnagram = false;
+                        break;
+                    }
+                    // Remove the found character to handle duplicates
+                    s2Copy = s2Copy.substring(0, index) + s2Copy.substring(index + 1);
+                }
+
+                if (isAnagram) {
+                    System.out.println(s1 + " " + s2);
+                    numberOfAnagrams += 2;
+                }
+            }
+        }
+        System.out.println("Total anagram count: " + numberOfAnagrams);
+    }
 }
 
 //Maximum of all subarray of size K
@@ -1053,6 +1153,167 @@ class common{
         System.out.println(common);
     }
 
+}
+class wcwec {
+    public static void main(String[] args) {
+        String name = "My   name  is   ram";
+        String[] nameArr = name.split("\\s+");
+        String newName = "";
+        for(String value: nameArr){
+            newName = newName+ value +" ";
+        }
+        System.out.println(newName);
+
+    }
+    /*  OR
+     String name = "My   name  is   ram";
+       String newName = name.replaceAll("\\s+"," ").trim();
+        System.out.println(newName);
+     */
+}
+//write a method to change i tto only one space between the words them
+
+class dupli {
+    public static void main(String[] args) {
+        String name = "automation";
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 0; i < name.length(); i++) {
+            char currentChar = name.charAt(i);
+            if (result.indexOf(String.valueOf(currentChar)) == -1) { // If not already present
+                result.append(currentChar);
+            }
+        }
+
+        System.out.println(result.toString()); // Output: "automin"
+    }
+    /*
+
+Character	result (so far)	indexOf Result	Action
+'a'	""	-1 (not found)	Append → "a"
+'u'	"a"	-1	Append → "au"
+'t'	"au"	-1	Append → "aut"
+'o'	"aut"	-1	Append → "auto"
+'m'	"auto"	-1	Append → "autom"
+'a'	"autom"	0 (found)	Skip (duplicate)
+'t'	"autom"	2 (found)	Skip (duplicate)
+'i'	"autom"	-1	Append → "automi"
+'o'	"automi"	3 (found)	Skip (duplicate)
+'n'	"automi"	-1	Append → "automin"
+Final Output: "automin"
+
+     */
+}
+
+//write a java program for given string are anagram or not.
+class ara{
+    public static void main(String[] args) {
+        String name1 = "tomato";
+        String name2 = "matoto";
+
+        char[] arr1 = name1.toCharArray();
+        char[] arr2 = name2.toCharArray();
+
+        // Sort both arrays
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+
+        boolean value = Arrays.equals(arr1, arr2);
+        if(value){
+            System.out.println("arragram");
+        }
+        else{
+            System.out.println("false");
+
+        }
+    }
+
+    }
+    //or
+
+class ara1{
+    public static void main(String[] args) {
+        String name1 = "tomato";
+        String name2 = "matoto";
+
+        // Create an array to store character counts (assuming lowercase letters only)
+        int[] charCount = new int[26];
+
+        // Count characters in both strings
+        for (int i = 0; i < name1.length(); i++) {
+            charCount[name1.charAt(i) - 'a']++; // Increment for str1
+            charCount[name2.charAt(i) - 'a']--; // Decrement for str2
+        }
+        for (int count : charCount) {
+            if (count != 0) {
+                System.out.println("not anagram");
+                return;
+            }
+        }
+
+        System.out.println("anagram");
+    }
+
+}
+class CombineString{
+    public static void main(String[] args) {
+
+        String input = "32400121200";
+        StringBuilder zeros = new StringBuilder();
+        StringBuilder nonZeros = new StringBuilder();
+
+        for (int i = 0; i < input.length(); i++) {
+            char c = input.charAt(i);
+            if (c == '0') {
+                zeros.append(c);
+            } else {
+                nonZeros.append(c);
+            }
+        }
+        zeros.append(nonZeros);
+        System.out.println(zeros.toString());
+
+
+    }
+    }
+
+//count each character
+class countEach{
+    public static void main(String[] args) {
+        String str = "aabbcccdd";
+        StringBuilder compressed = new StringBuilder();
+        char currentChar = str.charAt(0);
+        int count = 1;
+
+        for (int i = 1; i < str.length(); i++) {
+            if (str.charAt(i) == currentChar) {
+                count++;
+            } else {
+                compressed.append(currentChar).append(count);
+                currentChar = str.charAt(i);
+                count = 1;
+            }
+        }
+        // Append the last character and its count
+        compressed.append(currentChar).append(count);
+
+        System.out.println(compressed.toString());
+
+    }
+    }
+
+class StringLengthMap {
+    public static void main(String[] args) {
+        List<String> list = Arrays.asList("apple", "banana", "cherry");
+
+        Map<String, Integer> map = list.stream()
+                .collect(Collectors.toMap(
+                        str -> str,           // key: the string itself
+                        str -> str.length()   // value: the length of the string
+                ));
+
+        System.out.println(map);
+    }
 }
 /*
 An interface in Java is a blueprint of a class that defines abstract methods (methods without a body).
