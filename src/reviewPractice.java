@@ -673,6 +673,26 @@ class Mai111n {
         System.out.println("Array after moving zeros: " + Arrays.toString(arr1));
     }
 }
+// move zero to start
+class eeowv {
+
+    public static void main(String[] args) {
+        int [] arr = {1, 2, 0, 4, 3, 0, 5, 0};
+        int j=arr.length;
+        for(int i=j-1;i>=0;i--){
+            if(arr[i]!=0){
+                arr[j-1]=arr[i];
+                j--;
+            }
+        }
+        while(j>0){
+            arr[j-1]=0;
+            j--;
+        }
+
+        System.out.println(Arrays.toString(arr));
+    }
+}
 /*
 StringBuilder nonZeros = new StringBuilder();
         int zeroCount = 0;
